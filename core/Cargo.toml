@@ -1,0 +1,23 @@
+[package]
+name = "qrpc-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+
+[lib]
+name = "qrpc_core"
+path = "src/lib.rs"
+crate-type = ["rlib", "staticlib"]
+
+[[bench]]
+name = "unary"
+harness = false
+
+[dependencies]
+quinn = "0.11.11"
+
+[dev-dependencies]
+criterion = "0.8.2"
+rcgen = "0.14.8"
+tokio = { version = "1.53.1", features = ["macros", "rt-multi-thread"] }

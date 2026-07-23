@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    "core",
+    "rust",
+    "protoc-gen-qrpc",
+    "python",
+    "examples/rust",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0-dev"
+edition = "2021"
+license = "TBD"
+repository = "https://github.com/ChamHerry/qRPC"

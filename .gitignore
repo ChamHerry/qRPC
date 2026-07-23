@@ -1,3 +1,7 @@
 .DS_Store
 .spec-workflow/
 docs/
+target/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
